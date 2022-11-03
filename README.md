@@ -43,5 +43,5 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 **About the author**
 
-GitHub - [dusan-b](https://github.com/dusan-b)<br>
-Frontend Mentor - [@dusan-b](https://www.frontendmentor.io/profile/dusan-b)
+GitHub — [dusan-b](https://github.com/dusan-b)<br>
+Frontend Mentor — [@dusan-b](https://www.frontendmentor.io/profile/dusan-b)
