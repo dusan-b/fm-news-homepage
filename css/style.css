@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.9375rem;
   color: var(--clr-neutral-4);
   background-color: var(--clr-neutral-1);
@@ -67,6 +67,7 @@ button {
 }
 
 .is-active {
+  position: fixed;
   overflow: hidden;
 }
 
