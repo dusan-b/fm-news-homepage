@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -23,20 +23,17 @@
 
     <!-- Header -->
     <header class="main-header">
-      <h1>
-        <a href="./" class="logo" aria-label="W News homepage">
-          <img src="./img/logo.svg" class="logo__img" alt="">
-          <span class="visually-hidden">W news</span>
-        </a>
-      </h1>
+      <a href="./" class="logo">
+        <img src="./img/logo.svg" class="logo__img" alt="W News homepage">
+      </a>
 
       <!-- Main menu -->
-      <nav class="main-nav" aria-label="Main menu">
-        <button class="main-nav__btn" aria-expanded="false" aria-haspopup="menu" aria-controls="menu">
-          <span class="visually-hidden">Toggle main menu</span>
+      <nav class="main-nav" aria-label="Main">
+        <button class="main-nav__btn" aria-expanded="false" aria-controls="menu">
+          <span class="[ main-nav__btn-label ] [ visually-hidden ]">Open main menu</span>
         </button>
-        <ul id="menu" class="main-nav__menu">
-          <li><a class="main-nav__link" href="#0">Home</a></li>
+        <ul class="main-nav__menu" id="menu">
+          <li><a class="main-nav__link" href="#" aria-current="page">Home</a></li>
           <li><a class="main-nav__link" href="#0">New</a></li>
           <li><a class="main-nav__link" href="#0">Popular</a></li>
           <li><a class="main-nav__link" href="#0">Trending</a></li>
@@ -53,20 +50,18 @@
       <div class="hero">
         <picture class="hero__img">
           <source srcset="./img/image-web-3-desktop.webp" media="(min-width: 700px)" type="image/webp">
-          <source srcset="./img/image-web-3-desktop.jpg" media="(min-width: 700px)">
-          <source srcset="./img/image-web-3-mobile.webp" media="(max-width: 699px)" type="image/webp">
+          <source srcset="./img/image-web-3-desktop.jpg" media="(min-width: 700px)" type="image/jpeg">
+          <source srcset="./img/image-web-3-mobile.webp" type="image/webp">
           <img src="./img/image-web-3-mobile.jpg" alt="">
         </picture>
-        <h2 class="hero__heading">The Bright Future of Web 3.0?</h2>
-        <p class="hero__p">We dive into the next evolution of the web that claims to put the power of the platforms back
-          into the hands
-          of the people. But is it really fulfilling its promise?</p>
-        <a href="#0" class="hero__btn" aria-label="Read more about The Bright Future of Web 3.0">Read more</a>
+        <h1 class="hero__heading" id="hero-title">The Bright Future of Web 3.0?</h1>
+        <p class="hero__p">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <a href="#0" class="hero__btn" id="read-more" aria-labelledby="read-more hero-title">Read more</a>
       </div>
 
       <!-- New Articles -->
-      <section class="new-articles">
-        <h2 class="new-articles__heading">New <span class="visually-hidden">articles</span></h2>
+      <section class="new-articles" aria-labelledby="new-articles">
+        <h2 class="new-articles__heading" id="new-articles">New <span class="visually-hidden">articles</span></h2>
         <div class="new-article">
           <h3 class="new-article__heading">
             <a href="#0">Hydrogen VS Electric Cars</a>
@@ -89,8 +84,8 @@
       </section>
 
       <!-- Popular Articles -->
-      <section class="popular-articles">
-        <h2 class="visually-hidden">Popular articles</h2>
+      <section class="popular-articles" aria-labelledby="popular-articles">
+        <h2 class="visually-hidden" id="popular-articles">Popular articles</h2>
         <div class="popular-article">
           <a href="#0" tabindex="-1">
             <picture class="popular-article__img">
